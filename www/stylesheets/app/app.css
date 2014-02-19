@@ -1,0 +1,36 @@
+html, body {
+	height: 100%;
+}
+body {
+	background-image:		url('backgrounds/768_1024-01.png');
+	background-position:	fixed;
+}
+#header {
+	background-color:		rgba(0,0,0,0.5);
+	
+	background-image:		url('logo.png');
+	height:					44px;
+	background-position:	center center;
+	background-repeat:		no-repeat;
+	
+}
+#content {
+	max-height:			100%;
+	overflow:			auto;
+}
+#menu {
+	background-color:		#323849;
+}
+#page {
+	border-left: 1px solid #ccc;
+	min-height: 100%;
+}
+
+.stories {
+	
+}
+.stories > .story {
+	margin:				10px 20px;
+	background-color:	rgba(255,255,255,0.5);
+	padding:			20px;
+}

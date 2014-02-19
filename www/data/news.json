@@ -1,0 +1,12 @@
+[
+  {
+    "news_id": 1,
+    "name": "First news",
+    "description": "This is awesome."
+  },
+  {
+    "news_id": 2,
+    "name": "Second news",
+    "description": "This is also okay."
+  }
+]

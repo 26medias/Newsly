@@ -1,0 +1,20 @@
+<div id="page" ng-app="newsApp" ng-controller="ShowCtrl">
+	<div id="header">
+		<a href="#menu"></a>
+	</div>
+	<div id="content">
+		<div ng-repeat="story in stories" class="stories">
+			<div class="story">
+				<h3>{{story.title}}</h3>
+				<img src="{{story.image.url}}" style="width:120px;" />
+				<p>{{story.summary}}</p>
+			</div>
+		</div>
+	</div>
+	<nav id="menu">
+		<ul>
+			<li class="Selected"><a href="#" hm-tap="cat(true)">Latest News</a></li>
+			<li ng-repeat="(category,data) in categories"><a href="#" hm-tap="cat(category)">{{data.name}}</a></li>
+		</ul>
+	</nav>
+</div>

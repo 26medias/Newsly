@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.twenty-six-medias.newsly" version="1.0.0"
+	xmlns="http://www.w3.org/ns/widgets">
+
+	<name>Newsly</name>
+	<description>
+		News summaries
+	</description>
+	<author email="julien@twenty-six-medias.com" href="http://www.twenty-six-medias.com">
+		Twenty-Six Medias Team
+	</author>
+	<access origin="*" />
+	<preference name="fullscreen" value="false"/>
+</widget>

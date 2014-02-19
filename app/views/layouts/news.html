@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="navy">
+	<head>
+		<meta charset="utf8">
+		<title>Steroids App</title>
+		<link rel="stylesheet" href="/vendor/topcoat/css/topcoat-mobile-light.css" />
+		<link rel="stylesheet" href="/stylesheets/application.css" />
+		<link type="text/css" rel="stylesheet" href="/javascripts/menu/demo/demo.css" />
+		<link type="text/css" rel="stylesheet" href="/javascripts/menu/src/css/jquery.mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="/javascripts/menu/src/css/extensions/jquery.mmenu.widescreen.css" media="all and (min-width: 900px)" />
+		<link type="text/css" rel="stylesheet" href="/javascripts/menu/src/css/extensions/jquery.mmenu.themes.css" media="all and (min-width: 900px)" />
+		<link type="text/css" rel="stylesheet" href="/stylesheets/app/app.css" />
+		<script src="http://localhost/cordova.js"></script>
+		<script src="/components/steroids-js/steroids.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+		<script src="/components/angular/angular.min.js"></script>
+		<script src="/components/underscore/underscore-min.js"></script>
+		<script src="/components/restangular/dist/restangular.min.js"></script>
+		<script src="/vendor/hammerjs/hammer.min.js"></script>
+		<script src="/vendor/angular-hammer/angular-hammer.js"></script>
+		<script src="/javascripts/menu/src/js/jquery.mmenu.js"></script>
+		<script src="/models/<%= yield.controller %>.js"></script>
+		<script src="/controllers/<%= yield.controller %>.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					classes: 'mm-navy'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<%= yield.view %>
+	</body>
+</html>

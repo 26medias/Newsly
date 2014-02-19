@@ -1,0 +1,17 @@
+<div id="page" ng-app="newsApp" ng-controller="IndexCtrl">
+	<div id="header">
+		<a href="#menu"></a>
+	</div>
+	<div id="content">
+		<ul>
+			<li class="Selected"><a href="#" hm-tap="cat(true)">Latest News</a></li>
+			<li ng-repeat="(category,data) in categories"><a href="#" hm-tap="cat(category)">{{data.name}}</a></li>
+		</ul>
+	</div>
+	<nav id="menu">
+		<ul>
+			<li class="Selected"><a href="#" hm-tap="cat(true)">Latest News</a></li>
+			<li ng-repeat="(category,data) in categories"><a href="#" hm-tap="cat(category)">{{data.name}}</a></li>
+		</ul>
+	</nav>
+</div>
