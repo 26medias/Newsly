@@ -1,3 +1,3 @@
 #!/bin/sh
-cp API.conf /etc/init/API.conf
-start API
+cp newsly.conf /etc/init/newsly.conf
+start newsly
